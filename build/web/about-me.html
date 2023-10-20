@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Center align the form and its fields */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            width: 400px; /* Adjust container width as needed */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>About Me</h1>
+        <form action="processabout-me.jsp" method="post" id="about-form">
+            <label for="REGDNO">REGISTER NO::</label>
+            <input type="TEXT" id="REGDNO" name="REGDNO" required>
+<!--            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>-->
+
+<!--            <label for="major">Major:</label>
+            <input type="text" id="major" name="major" required>
+
+            <label for="passion">Passion/Interests:</label>
+            <input type="text" id="passion" name="passion" required>-->
+
+            <label for="aspirations">Career Aspirations:</label>
+            <input type="text" id="aspirations" name="aspirations" required>
+
+            <label for="interests">Interests and Hobbies:</label>
+            <textarea id="interests" name="interests" rows="3" required></textarea>
+
+            <label for="achievements">Awards and Achievements:</label>
+            <textarea id="achievements" name="achievements" rows="3" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="output">
+            <!-- Output of user input will be displayed here -->
+        </div>
+    </div>
+
+<!--    <script>
+        const form = document.getElementById('about-form');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            let outputHTML = '<h2>About Me</h2>';
+
+            formData.forEach((value, key) => {
+                outputHTML += `<p><strong>${key}:</strong> ${value}</p>`;
+            });
+
+            output.innerHTML = outputHTML;
+        });
+    </script>-->
+</body>
+</html>

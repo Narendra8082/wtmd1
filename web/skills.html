@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .form-container {
+            width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .skills-box {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .skills-box h3 {
+            margin: 0 0 10px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        
+        button[type="submit"] {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Skills</h1>
+        <form action="processskills.jsp" method="post" id="skills-form">
+            <label for="REGDNO">REGISTER NO:</label>
+            <input type="text" id="REGDNO" name="REGDNO" required>
+            <div class="skills-box">
+                <h3>Hard Skills</h3>
+                
+                <textarea id="hard-skills" name="hard-skills" placeholder="Enter hard skills..." rows="5"></textarea>
+            </div>
+
+            <div class="skills-box">
+                <h3>Soft Skills</h3>
+                <textarea id="soft-skills" name="soft-skills" placeholder="Enter soft skills..." rows="5"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

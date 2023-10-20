@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <style>
+        /* Center align the content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .background-container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.374),rgba(0, 0, 0, 0.374)), url(images/stdmain1.jpeg);
+            background-size: 100%;
+            background-position: center;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+          }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <h1>Student Login</h1>
+        <div class="button-container">
+            <button onclick="location.href='student-details.html'">Enter Student Details</button>
+            <button onclick="location.href='about-me.html'">About Me</button>
+            <button onclick="location.href='education.html'">Education</button>
+            <button onclick="location.href='projects.html'">Projects</button>
+<!--            <button onclick="location.href='resume.html'">Resume/CV</button>-->
+            <button onclick="location.href='courses-certifications.html'">Courses and Certifications</button>
+            <button onclick="location.href='skills.html'">Skills</button>
+        </div>
+    </div>
+</body>
+</html>

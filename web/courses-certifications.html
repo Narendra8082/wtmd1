@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses and Certifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .form-container {
+            width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        
+        .section h3 {
+            margin: 0 0 10px;
+        }
+        
+        .list {
+            padding: 10px 0;
+        }
+        
+        .list-item {
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        
+        button[type="submit"] {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Courses and Certifications</h1>
+        <form id="courses-form" action="process_courses.jsp" method="post">
+            <label for="REGDNO">REGISTER NO:</label>
+            <input type="text" id="REGDNO" name="REGDNO" required>
+            <div class="section">
+                <h3>Courses Completed:</h3>
+                <div class="list courses-list">
+                    <!-- List of added courses will be displayed here -->
+                </div>
+                <textarea id="course" name="course" placeholder="Add a course..."></textarea>
+            </div>
+
+            <div class="section">
+                <h3>Certifications Completed:</h3>
+                <div class="list certifications-list">
+                    <!-- List of added certifications will be displayed here -->
+                </div>
+                <textarea id="certification" name="certification" placeholder="Add a certification..."></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
